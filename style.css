@@ -4,11 +4,45 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   height: 100vh;
-  background-color: blue;
+  display: flex;
+  background-color: darkred;
+}
+
+.memory-game {
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+  display: flex;
+  border: 5px solid white;
+  margin: auto;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  position: relative;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: darkgray;
+  transform: scale(1);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transofrm 0.5s;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  position: absolute;
 }
 
 img {
   width: 100px;
+  height: 100%;
 }
