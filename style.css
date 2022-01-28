@@ -3,7 +3,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: darkgreen;
+  color: beige;
+  margin: auto;
+}
+.grid {
+  width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  display: flex;
+  border: 5px solid white;
+  margin: auto;
+  perspective: 1000px;
+  border-radius: 5px;
+}
+h3,
+h1 {
+  text-align: center;
+}
+img {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  background-color: darkgray;
+  border-radius: 5px;
+  padding: 5px;
+}
 
+/*
 body {
   height: 100vh;
   display: flex;
@@ -59,3 +87,4 @@ img {
   width: 100px;
   height: 100%;
 }
+ */
